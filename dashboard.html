@@ -1,1 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Dashboard</title>
+
+<link rel="stylesheet" href="css/dashboard.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>EMS</h2>
+
+<ul>
+
+<li class="active">
+<i class="fa-solid fa-chart-line"></i>
+Dashboard
+</li>
+
+<li>
+<i class="fa-solid fa-users"></i>
+Employees
+</li>
+
+<li>
+<i class="fa-solid fa-building"></i>
+Departments
+</li>
+
+<li>
+<i class="fa-solid fa-chart-pie"></i>
+Analytics
+</li>
+
+<li id="logout">
+<i class="fa-solid fa-right-from-bracket"></i>
+Logout
+</li>
+
+</ul>
+
+</div>
+
+<div class="main">
+
+<header>
+
+<h1>Dashboard</h1>
+
+<input
+type="text"
+placeholder="Search Employee..."
+id="search">
+
+</header>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Total Employees</h3>
+
+<h2 id="totalEmployees">24</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Departments</h3>
+
+<h2>6</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Average Salary</h3>
+
+<h2>$58,000</h2>
+
+</div>
+
+<div class="card">
+
+<h3>New This Month</h3>
+
+<h2>4</h2>
+
+</div>
+
+</div>
+
+<section class="table-section">
+
+<h2>Employees</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Name</th>
+
+<th>Department</th>
+
+<th>Email</th>
+
+<th>Salary</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody id="employeeTable">
+
+</tbody>
+
+</table>
+
+</section>
+
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>
